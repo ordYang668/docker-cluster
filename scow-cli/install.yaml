@@ -1,8 +1,8 @@
 port: 80
 basePath: /
-image: mirrors.pku.edu.cn/pkuhpc/scow/scow
-#image: ghcr.io/pkuhpc/scow/scow
-imageTag: master
+#image: ccimage.pku.edu.cn/scow/scow
+image: ghcr.io/pkuhpc/openscow/scow
+imageTag: v1.6.4
 portal:
   portMappings: {}
 mis:
@@ -14,7 +14,11 @@ log:
     logDir: /var/log/fluentd
 auth:
   portMappings: {}
-
+audit:
+  dbPassword: "must!chang3this"
+  portMappings:
+    auditServer: 7574
+    db: 3308
 gateway:
   proxyReadTimeout: 36000s
 plugins: 
