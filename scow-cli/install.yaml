@@ -1,6 +1,7 @@
 port: 80
 basePath: /
-#image: ccimage.pku.edu.cn/scow/scow
+# 企业版 SCOW 镜像：ccimage.pku.edu.cn/scow/scow
+# 开源版 SCOW 镜像：ghcr.io/pkuhpc/openscow/scow
 image: ghcr.io/pkuhpc/openscow/scow
 imageTag: v1.6.4
 portal:
